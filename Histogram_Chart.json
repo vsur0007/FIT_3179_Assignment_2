@@ -1,9 +1,9 @@
   {
       "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
       "data": {
-        "url": "https://raw.githubusercontent.com/vsur0007/FIT3179_Sem_2/main/Assignment_2/Earthquake_Data.csv"
+        "url": "https://raw.githubusercontent.com/vsur0007/FIT_3179_Assignment_2/main/Earthquake_Data.csv"
       },
-      "title": "Number of Earthquake occurances in USA",
+      "title": "Number of Earthquake occurrences in USA",
       "mark": {
         "type": "bar",
         "tooltip": true
