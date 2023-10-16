@@ -59,5 +59,6 @@
     }
   },
   "width": 475,
-  "height": 425
+  "height": 425,
+  "config": {"title": {"font": "sans-serif", "fontSize": 16}}
 }
