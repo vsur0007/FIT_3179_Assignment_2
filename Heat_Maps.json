@@ -42,5 +42,5 @@
   },
   "width": 600,
   "height": 400,
-  "config": {}
+  "config": {"title": {"font": "sans-serif", "fontSize": 16}}
 }
