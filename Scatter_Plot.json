@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/vsur0007/FIT3179_Sem_2/main/Assignment_2/Earthquake_Data.csv"
+  },
+  "title": "Probability of Earthquake occurances in USA",
+  "mark": {
+    "type": "circle",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "longitude",
+      "title": "Longitude",
+      "type": "quantitative",
+      "scale": {"zero": false}
+    },
+    "y": {
+      "field": "latitude",
+      "title": "Latitude",
+      "type": "quantitative",
+      "scale": {"zero": false}
+    },
+    "size": {
+      "field": "mag",
+      "title": "Magnitude",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "mag",
+      "type": "quantitative",
+      "scale": {"scheme": "lightgreyred"},
+      "title": "Magnitude"
+    },
+    "tooltip": [
+      {"field": "time", "title": "Time", "type": "temporal"},
+      {"field": "mag", "title": "Magnitude", "type": "quantitative"},
+      {"field": "place", "title": "Place", "type": "nominal"}
+    ]
+  },
+  "selection": {
+    "click": {
+      "type": "single", 
+      "encodings": ["color"], 
+      "on": "click"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "selection": "click"
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "labelOverlap": "greedy",
+      "labelFontSize": 10
+    }
+  },
+  "width": 475,
+  "height": 425
+}

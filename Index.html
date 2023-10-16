@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earthquakes in United States</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container:nth-child(odd) {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .container:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      border: 2px solid #000;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    #Title {
+      text-align: center;
+    }
+
+    #Desc {
+      text-align: left;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="Title">Earthquakes in United States</h1>
+    <p id="Desc">Earthquakes are natural phenomena that occur when there is a sudden release of energy in the Earth's
+      crust, causing seismic waves. The United States, despite not being located on a tectonic plate boundary, still
+      experiences earthquakes due to its complex geological features.</p>
+
+    <div class="center" id="mapncharts">
+      <!-- Content for map and charts goes here -->
+    </div>
+    <p>The line chart shows the total number of earthquakes that occurred in the United States each year January 2013 to January 2023.</p> 
+    <p>The number of earthquakes has fluctuated over the years, but there has been a general trend of increasing seismic activity.</p>
+    
+    <ul>
+      <li>The largest earthquake ever recorded in the United States was the 2019 Searles Valley, which had a magnitude of 7.1.</li>
+      <li>Earthquakes can cause a variety of hazards, including ground shaking, landslides, liquefaction, and tsunamis.</li>
+    </ul>
+    <p>Select and scroll the time where you want to see the earthquakes occurred in the US.</p>
+  </div>
+
+  <div class="container">
+    <div class="center" id="barchart">
+      <!-- Content for bar chart goes here -->
+    </div>
+    <p>The histogram shows the distribution of earthquake incidents in the United States by magnitude. The magnitude is
+      the measure of the energy released by an earthquake, and it is expressed on a logarithmic scale. The histogram
+      shows that the most common type of earthquake in the United States is a magnitude 2.5-2.9 earthquake. These
+      earthquakes are usually too small to be felt by humans. However, larger earthquakes can cause significant damage
+      and loss of life. The histogram also shows that the number of earthquakes decreases as the magnitude increases.
+      This means that there are fewer large earthquakes than small earthquakes.</p>
+  </div>
+
+  <div class="container">
+    <div class="center" id="heatmap">
+      <!-- Content for heatmap goes here -->
+    </div>
+    <p>The heat map shows the number of earthquake incidents in the United States from 2013 to 2023, with the darkest
+      areas indicating the highest number of incidents. The heat map is based on data from the United States Geological
+      Survey (USGS). The heat map shows that earthquakes are most common in the western United States, particularly in
+      New Mexico, Nevada, and California. This may indicate that these states are located on or near major tectonic plate
+      boundaries, which makes them more prone to earthquakes.</p>
+  </div>
+
+  <div class="container">
+    <div class="center" id="plotchart">
+      <!-- Content for plot chart goes here -->
+    </div>
+    <p>The chart shows that earthquakes are a common occurrence in the USA, especially in certain states. While most
+      earthquakes are small, larger earthquakes can cause significant damage and loss of life. The following regrions
+      that are prone to earthquakes are New Mexico, Nevada, and California as they frequently experience an average of 2.8 magnitude.</p>
+  </div>
+
+  <div class="container">
+    <p>Website created By: Sura Venkata Sri Anish, 32045980</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

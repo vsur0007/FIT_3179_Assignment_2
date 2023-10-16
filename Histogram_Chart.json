@@ -1,0 +1,25 @@
+  {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "data": {
+        "url": "https://raw.githubusercontent.com/vsur0007/FIT3179_Sem_2/main/Assignment_2/Earthquake_Data.csv"
+      },
+      "title": "Number of Earthquake occurances in USA",
+      "mark": {
+        "type": "bar",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "mag",
+          "bin": {"maxbins": 20},
+          "title": "Magnitude"
+        },
+        "y": {
+          "aggregate": "count",
+          "title": "Count of Earthquakes"
+        }
+      },
+      "width": 600,
+      "height": 400
+    }
+    
