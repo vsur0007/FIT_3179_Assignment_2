@@ -20,6 +20,7 @@
         }
       },
       "width": 600,
-      "height": 400
-    }
+      "height": 400,
+      "config": {"title": {"font": "sans-serif", "fontSize": 16}}
+  }
     
